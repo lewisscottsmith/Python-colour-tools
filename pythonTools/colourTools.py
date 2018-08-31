@@ -30,7 +30,10 @@ def print_complete(msg,end="\n",msg_style=normal,join="",indent="",colour=green)
 def print_update(msg,end="\n",msg_style=normal,join="",indent="",colour=purple):
     print(indent + normal + bold + "[{}UPDATE{}]{} {}".format(colour,normal+bold,join, normal + msg_style+msg+normal),end=end)
 
-def print_custom(msg,tag,end="\n",msg_style=normal,join="",indent="",colour=blue):
+def print_status(msg,end="\n",msg_style=normal,join="",indent="",colour=purple):
+    print(indent + normal + bold + "[{}STATUS{}]{} {}".format(colour,normal+bold,join, normal + msg_style+msg+normal),end=end)
+
+def print_custom(msg,tag,colour,end="\n",msg_style=normal,join="",indent=""):
     print(indent + normal + bold + "[{}{}]{} {}".format(colour+tag.upper(),normal+bold,join, normal + msg_style+msg+normal),end=end)
 
 def reset():
