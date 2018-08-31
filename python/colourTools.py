@@ -15,6 +15,21 @@ def print_info(msg,end="\n",msg_style=normal,join="",indent="",colour=blue):
 def print_error(msg,end="\n",msg_style=normal,join="",indent="",colour=red):
     print(indent + normal + bold + "[{}ERROR{}]{} {}".format(colour,normal+bold,join, normal + msg_style+msg+normal),end=end)
 
+def print_warning(msg,end="\n",msg_style=normal,join="",indent="",colour=yellow):
+    print(indent + normal + bold + "[{}WARNING{}]{} {}".format(colour,normal+bold,join, normal + msg_style+msg+normal),end=end)
+
+def print_ok(msg,end="\n",msg_style=normal,join="",indent="",colour=green):
+    print(indent + normal + bold + "[{}OK{}]{} {}".format(colour,normal+bold,join, normal + msg_style+msg+normal),end=end)
+
+def print_done(msg,end="\n",msg_style=normal,join="",indent="",colour=green):
+    print(indent + normal + bold + "[{}DONE{}]{} {}".format(colour,normal+bold,join, normal + msg_style+msg+normal),end=end)
+
+def print_complete(msg,end="\n",msg_style=normal,join="",indent="",colour=green):
+    print(indent + normal + bold + "[{}COMPLETE{}]{} {}".format(colour,normal+bold,join, normal + msg_style+msg+normal),end=end)
+
+def print_update(msg,end="\n",msg_style=normal,join="",indent="",colour=purple):
+    print(indent + normal + bold + "[{}UPDATE{}]{} {}".format(colour,normal+bold,join, normal + msg_style+msg+normal),end=end)
+
 def print_custom(msg,tag,end="\n",msg_style=normal,join="",indent="",colour=blue):
     print(indent + normal + bold + "[{}{}]{} {}".format(colour+tag.upper(),normal+bold,join, normal + msg_style+msg+normal),end=end)
 
