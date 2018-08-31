@@ -35,3 +35,9 @@ def print_custom(msg,tag,end="\n",msg_style=normal,join="",indent="",colour=blue
 
 def reset():
     print(normal)
+
+def print_msg(msg,colour=normal,end="\n"):
+    print(colour+msg+normal,end=end)
+
+def get_msg(msg,colour):
+    return colour + msg + normal
