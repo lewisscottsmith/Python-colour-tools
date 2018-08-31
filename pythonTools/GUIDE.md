@@ -1,6 +1,6 @@
 #User Guide
 ## Contents
-- [Colour tools]()
+- [Colour tools](https://github.com/lewisscottsmith/python-tools/blob/master/pythonTools/colourTools.py)
 
 ###Colour Tools
 Colour tools user guide.
