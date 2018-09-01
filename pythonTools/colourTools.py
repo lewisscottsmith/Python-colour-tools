@@ -12,6 +12,9 @@ normal = '\033[0m'
 def print_info(msg,end="\n",msg_style=normal,join="",indent="",colour=blue):
     print(indent + normal + bold + "[{}INFO{}]{} {}".format(colour,normal+bold,join, normal + msg_style+msg+normal),end=end)
 
+def print_note(msg,end="\n",msg_style=normal,join="",indent="",colour=blue):
+    print(indent + normal + bold + "[{}NOTE{}]{} {}".format(colour, normal + bold, join,normal + msg_style + msg + normal), end=end)
+
 def print_error(msg,end="\n",msg_style=normal,join="",indent="",colour=red):
     print(indent + normal + bold + "[{}ERROR{}]{} {}".format(colour,normal+bold,join, normal + msg_style+msg+normal),end=end)
 
