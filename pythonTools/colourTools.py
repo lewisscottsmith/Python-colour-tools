@@ -39,6 +39,9 @@ def print_status(msg,end="\n",msg_style=normal,join="",indent="",colour=purple):
 def print_custom(msg,tag,colour,end="\n",msg_style=normal,join="",indent=""):
     print(indent + normal + bold + "[{}{}]{} {}".format(colour+tag.upper(),normal+bold,join, normal + msg_style+msg+normal),end=end)
 
+def print_debug(msg):
+    print(purple + bold + "---> " + normal + purple + msg + normal)
+
 def reset():
     print(normal)
 
